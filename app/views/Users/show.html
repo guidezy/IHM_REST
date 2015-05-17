@@ -1,0 +1,9 @@
+<div>
+<p>Name: {{currentUser.name}}</p>
+<p>Surname: {{currentUser.surname}}</p>
+  <p>Projects:</p>
+  <ul>
+    <li ng-repeat="project in tabRoles" ><a href='#/projects/{{project.project.id}}'> {{project.project.title}}</a> - Rôle: {{project.role.name}}</a></li>
+  </ul>
+  <button ng-click="deleteUser()">Delete User</button>
+</div>

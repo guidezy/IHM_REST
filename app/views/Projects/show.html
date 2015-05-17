@@ -1,0 +1,18 @@
+<div>
+<p>Title: {{currentProject.title}}</p>
+<p>Description: {{currentProject.description}}</p>
+  <p>Year: {{currentProject.year}}</p>
+  <input placeholder="Name" ng-model="userName" />
+  <input placeholder="Surname" ng-model="userSurname" />
+  <button ng-click="addUser()">Add User</button>
+  <br/>
+  <hr/>
+  <input placeholder="Name" ng-model="userNameDel" />
+  <input placeholder="Surname" ng-model="userSurnameDel" />
+  <button ng-click="deleteUser()">Delete User</button>
+  <p>Users:</p>
+  <ul>
+    <li ng-repeat="user in tabRoles" ><a href='#/users/{{user.user.id}}'> {{user.user.name}},{{user.user.surname}}</a> - Rôle: {{user.role.name}}</li>
+  </ul>
+  <button ng-click="deleteProject()">Delete Project</button>
+</div>
